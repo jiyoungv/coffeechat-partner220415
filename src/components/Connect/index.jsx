@@ -9,19 +9,19 @@ const Connect = () => {
                 <article className='connect-content'>
                     <div className='connect-txt'>
                         <h2>
-                            우리는<br/>
-                            대화를 나누며 더 나은 선택과<br/>
-                            더 나은 삶으로 나아갈 수 있음을 믿습니다.<br/>
-                            당신의 재능과 열정이<br/>
-                            왜곡되고 막히는 일이 없도록,<br/>
-                            커피챗은 사람과 사람을 연결합니다.<br/>
-                            삶을 바꾸는 대화의 힘을<br/>
-                            커피챗으로 경험하세요.                            
+                            우리는 <br className='none-desktop'/>
+                            모두의 경험이 <br/>
+                            가치가 있음을 믿습니다. <br/>
+                            궁금함을 마음껏 묻고 싶은 호기심과 <br/>
+                            진심을 다해 알려주고 싶은 마음의 벽을 <br/>
+                            허물어 보겠습니다. <br/>
+                            나의 경험을 나눌 준비가 되었다면, <br/>
+                            지금 커피챗 파트너로 함께해 주세요.          
                         </h2>
                     </div>
                     <div className='connect-btn-wrap'>
-                        <a href='https://coffeechat.onelink.me/XgWl/4dd5f94e' target='_blank' rel='noreferrer' title='Google Play' className='connect-btn'>Google Play</a>
-                        <a href='https://coffeechat.onelink.me/XgWl/4dd5f94e' target='_blank' rel='noreferrer' title='App Store' className='connect-btn type-apple'>App Store</a>
+                        <a href='https://coffeechat.onelink.me/XgWl/bryvxhjw' target='_blank' rel='noreferrer' title='Google Play' className='connect-btn'>Google Play</a>
+                        <a href='https://coffeechat.onelink.me/XgWl/bryvxhjw' target='_blank' rel='noreferrer' title='App Store' className='connect-btn type-apple'>App Store</a>
                     </div>
                 </article>
             </Inners>

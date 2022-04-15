@@ -44,9 +44,6 @@ const Review = () => {
                             <h3>{parse(v.title)}</h3>
                             <p>{parse(v.text)}</p>
                         </div>
-                        <div className='review-list-foot'>
-                            <h6>From. {v.nickname} 님</h6>
-                        </div>
                     </div>
                 </div>
             </SwiperSlide>
@@ -63,9 +60,6 @@ const Review = () => {
                     <div className='review-list-txt'>
                         <h3>{parse(v.title)}</h3>
                         <p>{parse(v.text)}</p>
-                    </div>
-                    <div className='review-list-foot'>
-                        <h6>From. {v.nickname} 님</h6>
                     </div>
                 </div>
             </div>

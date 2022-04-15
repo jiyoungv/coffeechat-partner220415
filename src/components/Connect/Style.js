@@ -1,6 +1,8 @@
 import styled from 'styled-components';
 import { mediaQuery, color } from '../../styles/Variable';
 import connect_bg from '../../assets/images/connect_bg.png';
+import connect_bg_tablet from '../../assets/images/connect_bg_tablet.png';
+import connect_bg_mobile from '../../assets/images/connect_bg_mobile.png';
 import connect_google from '../../assets/images/connect_google.png';
 import connect_apple from '../../assets/images/connect_apple.png';
 
@@ -71,6 +73,7 @@ export const Connects = styled.section`
 
     ${mediaTablet} {
         padding: 80px 0;
+        background-image: url(${connect_bg_tablet});
 
         .connect-txt {
             margin-bottom: 40px;
@@ -86,6 +89,8 @@ export const Connects = styled.section`
 
     ${mediaMobile} {
         padding: 56px 0;
+        background-image: url(${connect_bg_mobile});
+        background-position: center bottom;
 
         .connect-txt {
             margin-bottom: 32px;

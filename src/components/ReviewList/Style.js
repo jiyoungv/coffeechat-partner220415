@@ -1,10 +1,11 @@
 import styled from 'styled-components';
-import { mediaQuery } from '../../styles/Variable';
+import { mediaQuery, color } from '../../styles/Variable';
 import review_type3_bg from '../../assets/images/review_type3_bg.png';
 import review_type3_tablet_bg from '../../assets/images/review_type3_tablet_bg.png';
 import review_type3_mobile_bg from '../../assets/images/review_type3_mobile_bg.png';
 
 const { mediaTablet, mediaMobile } = mediaQuery;
+const { brand500 } = color;
 
 export const ReviewLists = styled.article`
     position: relative;
@@ -24,7 +25,7 @@ export const ReviewLists = styled.article`
         width: 350px;
         height: 500px;
         padding: 31px;
-        border: 1px solid #2B51F1;
+        border: 1px solid ${brand500};
         border-radius: 16px;
         transition-property: opacity, transform;
         transition-duration: 0.5s;        
@@ -36,7 +37,7 @@ export const ReviewLists = styled.article`
 
         &.type2 {
             border-color: transparent;
-            background: #2B51F1;
+            background: ${brand500};
 
             .review-list-chip {
                 i {
@@ -52,19 +53,13 @@ export const ReviewLists = styled.article`
 
         &.type3 {
             border-color: transparent;
-            background: url(${review_type3_bg}) center/cover no-repeat;
-
-            .review-list-chip {
-                i {
-                    background: rgba(43, 81, 241, 0.96);
-                }
-            }         
+            background: url(${review_type3_bg}) center/cover no-repeat;     
         }
 
         &.type4 {
             border-color: transparent;
             border-radius: 26px;
-            background: linear-gradient(305.74deg, #2B50F1 -1.81%, #000000 146.85%, #000000 146.85%);
+            background: linear-gradient(305.74deg, #5E67EB -1.81%, #F3D7EC 146.85%);
 
             .review-list-chip {
                 i {
@@ -91,7 +86,7 @@ export const ReviewLists = styled.article`
             display: inline-block;
             border-radius: 100px;
             padding: 4px 16px;
-            background: #2B51F1;
+            background: ${brand500};
             color: #fff;
             font-size: 14px;
             font-weight: 700;
@@ -100,7 +95,7 @@ export const ReviewLists = styled.article`
     }
 
     .review-list-txt {
-        color: #2B51F1;
+        color: ${brand500};
 
         h3 {
             margin-bottom: 16px;            
@@ -182,7 +177,6 @@ export const ReviewLists = styled.article`
 
             &.type2 {
                 z-index: 1;
-                box-shadow: -22px 44px 88px #DDDDDD, -22px 44px 88px #DDDDDD;
             }
 
             &.type3 {
@@ -191,7 +185,6 @@ export const ReviewLists = styled.article`
 
             &.type4 {
                 border-radius: 8px;
-                background: linear-gradient(305.74deg, #2B50F1 -1.81%, #000000 146.85%, #000000 146.85%, #000000 146.85%), #2B51F1;
             }
         }
 

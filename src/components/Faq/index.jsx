@@ -1,19 +1,21 @@
 import React from 'react';
-import { Inners, Buttons } from '../../styles/Common';
+import { Inners } from '../../styles/Common';
 import { Faqs } from './Style';
+import faqData from '../../data/faqData';
+import FaqList from '../FaqList';
 
 const Faq = () => {
+    const faqList = faqData.map((v) => <FaqList key={v.id} data={v}/>);
+
     return (
         <Faqs>
             <Inners>
-                <article className='faq-content'>
-                    <div className='faq-txt'>
-                        <h2>커피챗이 더 궁금하다면?</h2>
-                    </div>
-                    <Buttons className='faq-btn'>
-                        <a href='https://www.coffeechat.kr/faq' target='_blank' rel='noreferrer' title='자주 묻는 질문'>자주 묻는 질문</a>
-                    </Buttons>                    
-                </article>
+                <div className='faq-tit'>
+                    <h2>자주 묻는 질문.</h2>
+                </div>
+                <ul className='faq-list'>
+                    {faqList}
+                </ul>
             </Inners>
         </Faqs>
     );
