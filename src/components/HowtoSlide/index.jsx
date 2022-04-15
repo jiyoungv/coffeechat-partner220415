@@ -20,7 +20,7 @@ const HowtoSlide = ({ setSlide }) => {
                     <div className='howto-list-txt'>
                         <i>{`${i < 9 ? 0 : ''}${i + 1}`}</i>
                         <h3>{v.title}</h3>
-                        <p>{parse(v.text)}</p>
+                        {parse(v.text)}
                     </div>
                 </div>
             </SwiperSlide>

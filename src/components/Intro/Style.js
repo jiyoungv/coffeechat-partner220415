@@ -2,7 +2,7 @@ import styled from 'styled-components';
 import { mediaQuery, color } from '../../styles/Variable';
 
 const { mediaTablet, mediaMobile } = mediaQuery;
-const { midnight600 } = color;
+const { midnight600, brand500 } = color;
 
 export const Intros = styled.section`
     padding: 160px 0;
@@ -56,7 +56,7 @@ export const Intros = styled.section`
 
         h3 {
             margin-bottom: 8px;
-            color: #2B51F1;
+            color: ${brand500};
             font-size: 16px;
             font-weight: 700;
             letter-spacing: -0.02em;

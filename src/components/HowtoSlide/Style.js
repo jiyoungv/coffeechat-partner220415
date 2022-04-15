@@ -1,17 +1,16 @@
 import styled from 'styled-components';
-import { mediaQuery } from '../../styles/Variable';
+import { mediaQuery, color } from '../../styles/Variable';
 import howto_tablet_bg1 from '../../assets/images/howto_tablet_bg1.png';
 import howto_tablet_bg2 from '../../assets/images/howto_tablet_bg2.png';
 import howto_tablet_bg3 from '../../assets/images/howto_tablet_bg3.png';
 import howto_tablet_bg4 from '../../assets/images/howto_tablet_bg4.png';
-import howto_tablet_bg5 from '../../assets/images/howto_tablet_bg5.png';
 import howto_mobile_bg1 from '../../assets/images/howto_mobile_bg1.png';
 import howto_mobile_bg2 from '../../assets/images/howto_mobile_bg2.png';
 import howto_mobile_bg3 from '../../assets/images/howto_mobile_bg3.png';
 import howto_mobile_bg4 from '../../assets/images/howto_mobile_bg4.png';
-import howto_mobile_bg5 from '../../assets/images/howto_mobile_bg5.png';
 
 const { mediaTablet, mediaMobile } = mediaQuery;
+const { brand500, midnight700 } = color;
 
 export const HowtoSlides = styled.article`
     .howto-swiper {
@@ -21,12 +20,12 @@ export const HowtoSlides = styled.article`
 
         .swiper-scrollbar-drag {
             border-radius: 0;
-            background: #2B51F1;
+            background: ${brand500};
         }        
     }
 
     .howto-swiper-desktop {
-        max-height: 262px;
+        max-height: 286px;
 
         .swiper-scrollbar {
             top: 50%;
@@ -77,7 +76,7 @@ export const HowtoSlides = styled.article`
             width: 200px;
             height: 200px;
             border-radius: 50%;
-            background: linear-gradient(222.01deg, #2B50F1 -28.75%, #7571FF 33.19%);
+            background: linear-gradient(260.47deg, #F2D6EB 9.8%, #2B50F1 135.18%);
         }
     }
 
@@ -97,20 +96,42 @@ export const HowtoSlides = styled.article`
         i {
             display: block;
             margin-bottom: 20px;
-            color: #2B51F1;
+            color: ${brand500};
             font-size: 24px;
             font-weight: 800;
         }
 
         h3 {
             margin-bottom: 8px;
-            color: #2B51F1;
+            color: ${brand500};
             font-size: 20px;
             font-weight: 700;
         }
 
         p {
             font-size: 16px;
+        }
+
+        ul {
+            margin-top: 8px;
+
+            li {
+                position: relative;
+                padding-left: 20px;
+                font-size: 13px;
+
+                &::before {
+                    content: '';
+                    display: inline-block;
+                    position: absolute;
+                    top: calc((20px - 3px) / 2);
+                    left: 8px;
+                    width: 3px;
+                    height: 3px;
+                    border-radius: 50%;
+                    background: ${midnight700};
+                }
+            }
         }
     }
 
@@ -134,7 +155,7 @@ export const HowtoSlides = styled.article`
         
         .howto-list-item {
             max-width: 620px;
-            height: 273px;
+            height: 275px;
 
             &.type1:before {
                 display: block;
@@ -171,10 +192,6 @@ export const HowtoSlides = styled.article`
             &.type4 {
                 background-image: url(${howto_tablet_bg4});
             }
-            
-            &.type5 {
-                background-image: url(${howto_tablet_bg5});
-            }
         }
 
         .howto-list-txt {
@@ -184,6 +201,12 @@ export const HowtoSlides = styled.article`
 
             p {
                 font-size: 14px;
+            }
+
+            ul {
+                li {
+                   font-size: 12px; 
+                }
             }
         }
     }
@@ -251,10 +274,6 @@ export const HowtoSlides = styled.article`
             &.type4 {
                 background-image: url(${howto_mobile_bg4});
             }
-            
-            &.type5 {
-                background-image: url(${howto_mobile_bg5});
-            }
         }
 
         .howto-list-txt {
@@ -269,6 +288,12 @@ export const HowtoSlides = styled.article`
             p {
                 font-size: 14px;
             }
+
+            ul {
+                li {
+                   font-size: 12px; 
+                }
+            }            
         }        
     }
 `;

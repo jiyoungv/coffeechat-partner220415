@@ -47,7 +47,7 @@ export const Howtos = styled.section`
     }
 
     ${mediaMobile} {
-        padding: 56px 0 47px;
+        padding: 56px 0;
 
         .howto-tit {
             margin-bottom: 24px;

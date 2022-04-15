@@ -4,7 +4,7 @@ import Header from './components/Header';
 import Hero from './components/Hero';
 import Short from './components/Short';
 import Intro from './components/Intro';
-import Benefit from './components/Benefit';
+import Induce from './components/Induce';
 import Review from './components/Review';
 import Faq from './components/Faq';
 import Howto from './components/Howto';
@@ -18,10 +18,10 @@ const App = () => {
 			<Hero />
 			<Short />
 			<Intro/>
-			<Benefit />
-			<Review />
-			<Faq />
+			<Induce />
 			<Howto />
+			<Faq />
+			<Review />
 			<Connect />
 		</>
 	);

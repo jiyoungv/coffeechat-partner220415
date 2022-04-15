@@ -3,50 +3,46 @@ import shortid from 'shortid';
 const howtoData = [
     { 
         id: shortid.generate(),
-        title: '파트너 탐색',
+        title: '파트너 등록 신청',
         text: `
-            카테고리 또는 검색창을 통해 <br/>
-            내가 궁금한 회사 · 직무 · 업계 · 학교의 파트너를 찾아보세요.        
+            <p>커피챗 앱에서 회원가입 후 바로 파트너 등록을 진행해 주세요.</p>
+            <ul>    
+                <li>나의 경험을 담은 매력적인 프로필과 대화 가능 주제 작성</li>
+                <li>2단계 인증 진행 (명함 또는 재직/재학 증명서 제출)</li>
+            </ul>
         `,
     },
     { 
         id: shortid.generate(),
-        title: '일정 선택',
+        title: '커피챗 수락',
         text: `
-            1:1 커피챗을 하고 싶은 파트너를 <br className='none-desktop none-tablet' />
-            찾았다면 <br className='none-mobile' />
-            내가 원하는 시간을 <br className='none-desktop none-tablet' />
-            최대 3개 제안해 보세요. 
-        `,
-    },
-    { 
-        id: shortid.generate(),
-        title: '사전 질문 작성',
-        text: `
-            내가 그동안 궁금했던 것이나 <br className='none-desktop none-tablet' /> 
-            고민을 <br className='none-desktop none-mobile' /> 
-            구체적으로 적어서 <br className='none-desktop none-tablet' /> 
-            파트너에게 전달해 보세요.<br/>
-            파트너는 나의 신상정보를 <br className='none-desktop none-tablet' /> 
-            알 수 없으니 안심하세요.
-        `,
-    },
-    { 
-        id: shortid.generate(),
-        title: '커피챗 확정',
-        text: `
-            커피챗 결제 후 최대 24시간 내에 파트너가 수락합니다. <br/>
-            카카오톡 알림톡을 통해 유의사항과 함께 확정 알림을 보내드려요.    
+            <p>앱 푸시 알림 또는 카카오톡 알림톡을 통해 내가 받은 커피챗을 확인해 주세요.</p>
+            <ul>
+                <li>신청자의 사전 질문 확인 후 원하는 시간 선택</li>
+                <li>일정 조율 또는 거절 가능</li>
+            </ul>
         `,
     },
     { 
         id: shortid.generate(),
         title: '커피챗 진행',
         text: `
-            커피챗 앱에서 예약시간 30분 <br className='none-desktop none-tablet' />
-            전부터 입장할 수 있어요. <br/>
-            밀도 높은 20분 대화, <br className='none-desktop none-tablet' />
-            1:1 커피챗을 경험해 보세요.    
+            <p>예약 시간에 앱에서 입장해 주세요.</p>
+            <ul>
+                <li>예약 시간 30분 전부터 입장 가능</li>
+                <li>1:1 익명 기반 20분 음성 대화 진행</li>
+            </ul>
+        `,
+    },
+    { 
+        id: shortid.generate(),
+        title: '리워드 획득',
+        text: `
+            <p>커피챗 종료 후 리워드 정보를 입력해 주세요.</p>
+            <ul>
+                <li>리워드 정보 최초 1회 등록 필요</li>
+                <li>매주 목요일 현금 리워드 등록 계좌로 지급 (1회 20분 / 1만 원)</li>
+            </ul>
         `,
     },
 ];

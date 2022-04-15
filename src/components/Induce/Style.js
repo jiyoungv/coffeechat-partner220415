@@ -3,66 +3,71 @@ import { mediaQuery } from '../../styles/Variable';
 
 const { mediaTablet, mediaMobile } = mediaQuery;
 
-export const Benefits = styled.section`
+export const Induces = styled.section`
     padding: 63px 0;
-    background: linear-gradient(260.47deg, #F140BC 9.8%, #2B50F1 135.18%);
-
-    .benefit-content {
+    background: linear-gradient(260.47deg, #F2D6EB 9.8%, #2B50F1 135.18%);
+    .induce-content {
         display: flex;
         justify-content: space-between;
         align-items: center;
     }
 
-    .benefit-txt {
+    .induce-txt {
+        color: #fff;
+
         h2 {
-            color: #fff;
             font-size: 24px;
         }
     }
 
     ${mediaTablet} {
-        padding: 53.5px 0;
-        background: linear-gradient(260.47deg, #F140BC 9.8%, #2B50F1 104.93%);
+        padding: 70px 0;
 
-        .benefit-content {
+        .induce-content {
             display: block;
         }
 
-        .benefit-txt {
+        .induce-txt {
             margin-bottom: 24px;
             text-align: center;
 
             h2 {
                 font-size: 20px;
-                line-height: 1.8;
-                font-weight: 700;
+
+                strong {
+                    display: inline-block;
+                    margin-bottom: 10px;
+                }
             }
         }
 
-        .benefit-btn {
+        .induce-btn {
             text-align: center;
         }
     }
 
     ${mediaMobile} {
         padding: 56px 0;
-        background: linear-gradient(260.47deg, #F140BC 9.8%, #2B50F1 132.19%), #FAF8FF;
 
-        .benefit-content {
+        .induce-content {
             display: block;
         }
 
-        .benefit-txt {
+        .induce-txt {
             margin-bottom: 24px;
             text-align: center;
 
             h2 {
+                margin-bottom: 24px;
                 font-size: 18px;
-                font-weight: 700;
+            }
+
+            h3 {
+                font-size: 13px;
             }
         }
 
-        .benefit-btn {
+        .induce-btn {
             text-align: center;
         }        
     }

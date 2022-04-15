@@ -59,14 +59,14 @@ export const Buttons = styled.div`
 
     ${mediaTablet} {
         a, button {
-            padding: 12.5px 15px;
+            // padding: 12.5px 15px;
         }
     }
 
     ${mediaMobile} {
         a, button {
-            padding: 12px 15px;
-            font-size: 14px;
+            padding: 10.5px 13.5px;
+            font-size: 11px;
         }
     }
 `;

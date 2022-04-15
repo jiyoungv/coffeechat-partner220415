@@ -18,7 +18,7 @@ export const HowtoBalls = styled.article`
         width: 200px;
         height: 200px;
         border-radius: 50%;
-        background: linear-gradient(222.01deg, #2B50F1 -28.75%, #7571FF 33.19%);
+        background: linear-gradient(260.47deg, #F2D6EB 9.8%, #2B50F1 135.18%);
         transition-property: transform;
         transition-duration: 0.2s;
         backface-visibility: hidden;
