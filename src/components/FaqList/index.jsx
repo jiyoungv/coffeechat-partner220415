@@ -2,7 +2,7 @@ import React, { useCallback, useState } from 'react';
 import parse from 'html-react-parser';
 
 const FaqList = ({ data }) => {
-    const [open, setOpen] = useState(false);
+    const [open, setOpen] = useState(true);
     const onClick = useCallback(() => {
         setOpen(prev => !prev);
     }, []);

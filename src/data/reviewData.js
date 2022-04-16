@@ -57,7 +57,7 @@ const reviewData = [
         text: `
             링크드인을 통해 수없이 콜드 메일을 보냈던 경험, <br className='none-tablet none-mobile'/>
             저도 있습니다. <br className='none-tablet none-mobile'/>
-            이제는 커피챗으로 누군가의 시작에 조금이나마 <br className='none-mobile'/>
+            이제는 커피챗으로 누군가의 시작에 조금이나마 <br className='none-tablet none-mobile'/>
             도움이 될 수 있다니 기뻐요. <br className='none-tablet none-mobile'/>
             20분 동안 실시간으로 대화를 주고받으며 저도 <br className='none-tablet none-mobile'/>
             정보를 얻기도 합니다.

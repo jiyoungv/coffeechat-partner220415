@@ -32,6 +32,7 @@ export const Faqs = styled.section`
 
                 .faq-list-a {
                     overflow: visible;
+                    opacity: 1;
                     height: auto;
                     padding: 16px 0 32px;
                     border-top: 1px solid ${midnight100};
@@ -46,6 +47,7 @@ export const Faqs = styled.section`
             position: relative;
             width: 100%;
             padding: 16px 0;
+            padding-right: 56px;
             color: ${slate700};
             font-size: 16px;
             font-weight: 700;
@@ -55,7 +57,7 @@ export const Faqs = styled.section`
                 display: block;
                 position: absolute;
                 top: 50%;
-                right: 0;
+                right: 4px;
                 transform: translateY(-50%);
                 width: 16px;
                 height: 2px;
@@ -72,6 +74,7 @@ export const Faqs = styled.section`
 
     .faq-list-a {
         overflow: hidden;
+        opacity: 0;
         height: 0;
         transition: height 0.3s, padding 0.3s;
 
@@ -85,5 +88,20 @@ export const Faqs = styled.section`
     }
 
     ${mediaMobile} {
+        padding: 56px 0;
+
+        .faq-tit {
+            margin-bottom: 24px;
+
+            h2 {
+                font-size: 16px;
+            }
+        }
+
+        .faq-list-q {
+            button {
+                font-size: 14px;
+            }
+        }
     }
 `;
