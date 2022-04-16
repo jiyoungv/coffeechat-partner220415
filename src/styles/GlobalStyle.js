@@ -5,7 +5,7 @@ import { hidden } from './Mixin';
 
 const { mediaTablet, mediaMobile } = mediaQuery;
 const { system, appleSystem, notoSans } = fontFamily;
-const { midnight700 } = color;
+const { midnight700, brand500 } = color;
 
 function transDelay(length, duration) {
 	let styles = '';
@@ -97,6 +97,14 @@ const GlobalStyle = createGlobalStyle`
 	br.none-desktop {
 		display: none;
 	}
+
+    .tit-mark {
+        color: ${brand500};
+    }
+
+	.tit-mark2 {
+        color: #2B51F1;
+    }
 
 	${mediaTablet} {
 		br.none-desktop {

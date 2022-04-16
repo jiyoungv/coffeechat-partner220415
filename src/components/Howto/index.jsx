@@ -12,7 +12,7 @@ const Howto = () => {
         <Howtos>
             <Inners>
                 <div className='howto-tit'>
-                    <h2>파트너 이용방법.</h2>
+                    <h2>파트너 이용 방법<span className='tit-mark'>.</span></h2>
                 </div>
                 <article className='howto-content'>
                     {IsDesktop() && <HowtoBall slide={slide} />}

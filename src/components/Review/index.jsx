@@ -10,7 +10,7 @@ const Review = () => {
                 <div className='review-tit'>
                     <h2>
                         커리어 커뮤니케이션 시장을<br/>
-                        함께 혁신하는 커피챗 파트너들.
+                        함께 혁신하는 커피챗 파트너들<span className='tit-mark'>.</span>
                     </h2> 
                 </div>
                 <ReviewList />

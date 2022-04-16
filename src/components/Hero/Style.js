@@ -29,6 +29,7 @@ export const Heros = styled.section`
             margin-top: 128px;
             color: #fff;
             font-size: 24px;
+            font-weight: 700;
         }
     }
 

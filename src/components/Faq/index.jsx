@@ -31,7 +31,7 @@ const Faq = () => {
         <Faqs>
             <Inners>
                 <div className='faq-tit'>
-                    <h2>자주 묻는 질문.</h2>
+                    <h2>자주 묻는 질문<span className='tit-mark2'>.</span></h2>
                 </div>
                 <ul className='faq-list'>
                     {faqList}
