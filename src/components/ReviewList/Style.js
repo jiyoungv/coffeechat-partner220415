@@ -59,6 +59,7 @@ export const ReviewLists = styled.article`
         &.type4 {
             border-color: transparent;
             border-radius: 26px;
+            border: none;
             background: linear-gradient(305.74deg, #5E67EB -1.81%, #F3D7EC 146.85%);
 
             .review-list-chip {
